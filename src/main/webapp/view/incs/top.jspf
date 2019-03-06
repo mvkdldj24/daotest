@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
+<html lang="en">
+<head>
+<title>Bootstrap 4 Website Example</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+#join_tr>tr>td {
+	font-weight: bolder;
+}
+
+input {
+	text-align: center;
+}
+
+#li1, #li2 {
+	color: white;
+}
+
+#join {
+	list-style: none;
+	font-size : 20px;
+}
+
+#r1 {
+	background: yellow;
+}
+
+.fakeimg {
+	height: 200px;
+	background: #aaa;
+}
+
+.container {
+	width: 100% !important;
+}
+
+#main {
+	text-align: center;
+}
+
+#join {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div class="jumbotron text-center"
+		style="margin-bottom: 0; background: CDD4F0;">
+		<h1>My First Bootstrap 4 Page</h1>
+		<p>Resize this responsive page to see the effect!</p>
+	</div>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav" id="ul1">
+
+
+				<li class="nav-item"><a class="nav-link" id="li1" href="main">메인</a></li>
+				<li class="nav-item"><a class="nav-link" id="li1" href="files">회원가입</a></li>
+				<li class="nav-item"><a class="nav-link" id="li2"
+					href="list.do">회원목록</a></li>
+				<li class="nav-item"><a class="nav-link" id="li2"
+					href="uploadimg">이미지 업로드</a></li>
+				<li class="nav-item"><a class="nav-link" id="li2"
+					href="fileupload">파일 업로드</a></li>
+				<li class="nav-item"><a class="nav-link" id="li2"
+					href="imgview.do">앨범</a></li>
+			</ul>
+		</div>
+	</nav>
